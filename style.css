@@ -232,7 +232,7 @@ section{
 }
 
 .coding-skill-area > .box-area > div{
-    flex-basis:450px;
+    flex-basis:460px;
 }
 
 .coding-skill-area > .box-area > .paragraph > .heading{
@@ -241,7 +241,7 @@ section{
 }
 .coding-skill-area > .box-area > .paragraph > .context{
     margin-top: 10px;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 600;
 }
 
@@ -249,6 +249,7 @@ section{
     display: flex;
     color: #444;
     font-weight: bold;
+    margin-left: 30px;
 }
 .coding-skill-area > .box-area > .courses > div{
     font-size: 25px;
@@ -274,4 +275,112 @@ section{
 .coding-skill-area > .box-area > .courses{
     margin-top: 20px;
 }
+}
+
+/* coding curriculum */
+
+.coding-curriculum{
+    position: absolute;
+    top: 1875px;
+    width:100%;
+    height: 100vh;
+    background-color: thistle;
+}
+
+.coding-curriculum > .heading{
+    padding: 50px;
+    text-align: center;
+    font-size: 40px;
+    color: #555;
+}
+
+.coding-curriculum > .content{
+    list-style: none;
+    margin-left: 300px;
+    font-size: 22px;
+}
+
+.coding-curriculum > .content > li{
+    display: flex;
+    align-items: center;
+    margin: 5px;
+}
+
+.coding-curriculum > .content > li > p{
+    margin-left: 5px;
+}
+
+/* coding-packages */
+
+.coding-packages{
+    position:absolute;
+    top:2500px;
+    background-color: palevioletred;
+    width:100%;
+    height: 100vh;
+}
+
+.coding-packages > .heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0px 0px 0px;
+    font-size: 40px;
+    color: #555;
+
+}
+
+.coding-packages > .heading > i{
+    margin-right: 1rem;
+}
+
+.coding-packages > .content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 80px;
+    padding:10px;
+}
+
+.coding-packages > .content > div{
+    background-color: white;
+    flex-basis: 300px;
+    height: 380px;
+    padding: 20px 10px;
+    /* text-align: center; */
+    border-radius: 5px;
+    cursor: pointer;
+}
+.coding-packages > .content > div:hover{
+    background-color: #ccc;
+    transition: .5s;
+}
+.coding-packages > .content > div > .star{
+    text-align: center;
+}
+.coding-packages > .content > div > .package{
+    margin: 2rem 0rem 1rem 0rem;
+    font-size: large;
+    font-weight: 700;
+    text-align: center;
+}
+
+.coding-packages > .content > div > .context{
+    list-style: none;
+    font-size: 18px;
+    padding: 10px 0px;;
+    padding: 1rem 1.5rem;
+    color: #555;
+}
+
+.coding-packages > .content> div > .context > li{
+    display: flex;
+    align-items: center;
+    margin: 5px;
+    padding:0;
+}
+
+.coding-packages > .content > div > .context > li > p{
+    margin-left: 10px;
 }
