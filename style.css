@@ -1,0 +1,277 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.wrappar{
+    position: relative;
+    top:0;
+    left:0;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+header{
+    position:absolute;
+    width: 100%;
+}
+header > nav{
+    background-color: transparent;
+    padding: 38px 0px;
+    color: #fff;
+    font-weight: 600;    
+    position: sticky;
+    top:0;
+}
+header > nav > ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+header > nav > ul > li{
+    padding: .5rem;
+}
+header > nav > ul > li > a{
+    color:white;
+    text-decoration: none;
+    font-size: 22px;
+}
+header > nav > ul > li > a:hover{
+    color: tomato;
+    padding-bottom: .5rem;
+    border-bottom: 2px solid tomato;
+    transition: .5s;
+    cursor:pointer;
+}
+.bannar-area{
+    position: absolute;
+    top:0;
+    right:0;
+    left:0;
+    bottom: 0;
+    background-image: url(images/bannar-image.jpg);
+    width:100%;
+    height: 100vh;
+    background-repeat: none;
+    background-size: cover;
+    /* background-clip: border-box; */
+    z-index:-1;
+    /* text-align: center; */
+}
+section{
+    /* display: grid;
+    grid-template-columns: 1fr; */
+}
+.bannar-area > .container{
+    position: relative;
+}
+
+.bannar-area > .container > .text-area{
+    position: absolute;
+    top:180px;
+    left: 200px;
+}
+
+.bannar-area > .container > .text-area > .heading{
+    margin-bottom: 1rem;
+}
+
+.bannar-area > .container > .text-area > .heading > h1{
+    font-size: 4rem;
+    color:chartreuse;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.bannar-area > .container > .text-area > .heading > p{
+    padding: 0px 5px;
+    color:yellowgreen;
+    font-size: 15px;
+}
+
+
+.bannar-area > .container > .text-area > .paragraph{
+    color: honeydew;
+    margin-bottom: 1rem;
+    font-size: 18px;
+    /* padding: 0px 2px; */
+}
+
+.bannar-area > .container > .text-area > .button-area > button{
+    padding:15px 25px;
+    background-color: steelblue;
+    color:#fff;
+    font-size: 18px;
+    border: 1px solid white;
+    border-radius: 5px;
+    outline: blue;
+    cursor:pointer;
+    font-weight:600;
+    margin-top: 1rem;;
+}
+
+.bannar-area > .container > .text-area > .button-area > button:hover{
+    border: 2px solid skyblue;
+    background-color: seagreen;
+}
+
+.bannar-area >.container > .box-area{
+    position: absolute;
+    top:480px;
+    left:180PX;
+    height: 20px;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.bannar-area > .container > .box-area > div{
+    background-color: steelblue;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400px;
+    flex-basis:300px;
+    padding: 20px;
+    margin-top: 1rem;
+    border-radius: .5rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.bannar-area > .container > .box-area > div:hover{
+    margin-top:0;
+}
+
+.bannar-area > .container > .box-area > .box2{
+    padding:20px 10px;
+}
+
+/* about area */
+
+.about-area{
+    position:absolute;
+    top:625px;
+    background-color: peru;
+    width:100%;
+}
+
+.about-area > .heading{
+    margin: 50px 130px 10px 0;
+    font-weight: 0;
+    font-size: 25px;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color:#333;
+    display: flex;
+    justify-content: center;
+    margin-right: 200px;
+}
+.about-area > .heading > i{
+    padding-right: 5rem;
+}
+.about-area > .paragraph{
+    padding: 30px 60px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+.about-area > .paragraph > p{
+    padding: 0 20px;
+    font-size: 22px;
+}
+
+.about-area > .box-area{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 50px 200px 30px;
+    font-size: 25px;
+}
+
+.about-area > .counting{
+    display: flex;
+    justify-content: space-around;
+    font-size: 25px;
+    font-weight: 400;
+    margin: 0px 300px 150px;
+
+}
+
+/* coding skill area */
+
+.coding-skill-area{
+    position:absolute;
+    top:1250px;
+    background-color: #aaa;
+    width:100%;
+    height:100vh;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.coding-skill-area > div{
+    /* background-color: teal; */
+    margin-bottom: 20px;
+}
+
+.coding-skill-area > .heading{
+    text-align: center;
+    padding: 50px 38px;
+    font-size: 38px;
+    color:#444;
+}
+.coding-skill-area > .box-area{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.coding-skill-area > .box-area > div{
+    flex-basis:450px;
+}
+
+.coding-skill-area > .box-area > .paragraph > .heading{
+    font-size: 25px;
+    color: #555;
+}
+.coding-skill-area > .box-area > .paragraph > .context{
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.coding-skill-area > .box-area > .courses{
+    display: flex;
+    color: #444;
+    font-weight: bold;
+}
+.coding-skill-area > .box-area > .courses > div{
+    font-size: 25px;
+    list-style: none;
+}
+.coding-skill-area > .box-area > .courses > .left-side{
+    border-right: 2px solid #222;
+    padding-right: 20px;
+}
+
+.coding-skill-area > .box-area > .courses > .left-side > li{
+    margin-bottom:20px;
+}
+
+.coding-skill-area > .box-area > .courses > .right-side{
+    padding-left: 20px;
+}
+
+.coding-skill-area > .box-area > .courses > .right-side > li{
+    padding: 30px 0px;
+}
+@media(max-width:800px){
+.coding-skill-area > .box-area > .courses{
+    margin-top: 20px;
+}
+}
