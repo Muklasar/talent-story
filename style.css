@@ -123,7 +123,6 @@ section{
     position: absolute;
     top:480px;
     left:180PX;
-    height: 20px;
     width: 70%;
     display: flex;
     justify-content: space-between;
@@ -131,20 +130,21 @@ section{
     align-items: center;
 }
 
-.bannar-area > .container > .box-area > div{
-    background-color: steelblue;
+.bannar-area > .container > .box-area > form > button{
+    background-color: teal;
+    border: 1px solid yellow;
     color: #fff;
     font-size: 16px;
     font-weight: 400px;
-    flex-basis:300px;
     padding: 20px;
     margin-top: 1rem;
     border-radius: .5rem;
     text-align: center;
     cursor: pointer;
+    flex-basis: 250px;
 }
 
-.bannar-area > .container > .box-area > div:hover{
+.bannar-area > .container > .box-area > form > button:hover{
     margin-top:0;
 }
 
@@ -348,7 +348,6 @@ section{
     flex-basis: 300px;
     height: 380px;
     padding: 20px 10px;
-    /* text-align: center; */
     border-radius: 5px;
     cursor: pointer;
 }
@@ -375,12 +374,96 @@ section{
 }
 
 .coding-packages > .content> div > .context > li{
-    display: flex;
-    align-items: center;
+    
     margin: 5px;
     padding:0;
 }
 
 .coding-packages > .content > div > .context > li > p{
     margin-left: 10px;
+}
+
+/* extra-curricular */
+
+.extra-curricular{
+    position:absolute;
+    top:3125px;
+    background-color: thistle;
+    width:100%;
+    height: 100vh;
+}
+
+
+.extra-curricular > .heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0px 0px 0px;
+    font-size: 40px;
+    color: #555;
+}
+.extra-curricular > .paragraph{
+    margin: 50px 200px;
+    font-size: 22px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    color: #333;
+
+}
+.extra-curricular > .skills{
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    font-size: 22px;
+    flex-wrap: wrap;
+    padding: 0px 100px;
+}
+.extra-curricular > .skills > div{
+    display: flex;
+    justify-content: space-around;
+}
+.extra-curricular > .skills > .top > div{
+    padding: 8px 12px;
+    border: 2px solid #333;
+    font-weight: bold;
+}
+.extra-curricular > .skills > .bottom > div{
+    padding: 8px 12px;
+    border: 2px solid #333;
+    margin-top: 20px;
+}
+
+/* languages */
+
+.languages{
+    position:absolute;
+    top:3750px;
+    background-color: lightblue;
+    width:100%;
+    height: 100vh;
+}
+.languages > .heading{
+    text-align: center;
+    padding: 50px 0px 0px 0px;
+    font-size: 40px;
+    color: #555;   
+}
+.languages > .paragraph{
+    display: flex;
+    justify-content: center;
+    margin-left: 200px;
+}
+
+.languages > .paragraph > div{
+    flex-basis: 400px;
+    height: 500px;
+    padding:10px;
+    margin: 20px;
+}
+
+.languages > .paragraph > .box1 > li{
+    list-style: none;
+    font-size: 22px;
+    margin-top: 18px;
 }
